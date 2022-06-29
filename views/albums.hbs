@@ -1,0 +1,9 @@
+<div class="albums">
+    {{#each albums as |album|}}
+        <div class="albums-item">
+            <img src="{{album.images.0.url}}" alt="">
+        <div>{{album.name}}</div>
+        <a href="/songs/{{album.id}}">Open Album</a>
+        </div>
+    {{/each}}
+</div>

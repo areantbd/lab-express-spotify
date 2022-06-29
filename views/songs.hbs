@@ -1,0 +1,11 @@
+
+<div class="songs">
+{{#each songs as |song|}}
+    <div class="song-item">
+        <div>{{song.name}}</div>
+        <audio controls>
+            <source src="{{song.preview_url}}" type="audio/mpeg">
+        </audio>
+    </div>
+{{/each}}
+</div>
