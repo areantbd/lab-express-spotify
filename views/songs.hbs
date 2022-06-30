@@ -1,11 +1,19 @@
-
 <div class="songs">
-{{#each songs as |song|}}
-    <div class="song-item">
-        <div>{{song.name}}</div>
-        <audio controls>
-            <source src="{{song.preview_url}}" type="audio/mpeg">
-        </audio>
+  <nav class="navbar bg-dark upper">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 text name">Title</span>
+      <span class="navbar-brand mb-0 h1 text audio">Listen</span>
     </div>
-{{/each}}
+  </nav>
+  {{#each songs as |song|}}
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h3 title">{{song.name}}</span>
+            <span class="navbar-brand mb-0 h3 song"><audio controls>
+        <source src="{{song.preview_url}}" type="audio/mpeg" />
+      </audio></span>
+        </div>
+    </nav>
+
+  {{/each}}
 </div>

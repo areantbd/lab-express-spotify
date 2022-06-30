@@ -1,7 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
-body{
+#background{
+    height: 100%;
     background-image: url('/images/spotify-background.jpeg');
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    padding: 2rem 8rem;
+    display: inline-block;
+    background-color: rgba(75, 77, 77, 0.411);
+    border-radius: 10px;
+}
+#home h1{
+    color: #1ed760;
+    text-shadow: 2px 2px 5px rgb(87, 86, 86);
+}
+#home form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#home form input{
+    text-align: center;
+    padding: 0 10%;
+}
+#home form button{
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px brown;
+    padding: 0 10%;
+}
+
+.artists {
+    background-color: #1db954;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.artists .card {
+    margin: 10px 0;
+}
+.artists .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(48, 47, 47);
+}
+.artists .card-body h5{
+    color: white;
+}
+.artists .card-body a{
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px brown;
+}
+.artists .card-body .spotify{
+    background-color: #1db954;
+    box-shadow: 2px 2px 5px #1db954;
+    margin-top: 8px;
+}
+
+.albums {
+    background-color: #1db954;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.albums .card {
+    margin: 10px 0;
+}
+.albums .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(48, 47, 47);
+}
+.albums .card-body h5{
+    color: white;
+}
+.albums .card-body a{
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px brown;
+}.albums .card-body .spotify{
+    background-color: #1db954;
+    box-shadow: 2px 2px 5px #1db954;
+    margin-top: 8px;
+}
+
+.songs .text {
+    color:#1db954;
+    font-size: 2rem;
+}
+.songs .name{
+    margin-left: 15%;
+}
+.songs .audio{
+    margin-right: 15%;
+}
+.songs .title{
+    font-size: 1rem;
+    margin-left: 10%;
+}
+.songs .song{
+    margin-right: 10%;
 }
