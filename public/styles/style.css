@@ -3,6 +3,11 @@ html, body {
     padding: 0;
     height: 100%;
 }
+body .navbar .navbar-brand{
+    color: #1db954;
+    font-weight: bolder;
+    margin-left: 3%;
+}
 
 #background{
     height: 100%;
@@ -126,6 +131,10 @@ html, body {
 .songs .title{
     font-size: 1rem;
     margin-left: 10%;
+}
+.songs .title a{/* 
+    text-decoration: none; */
+    color: #1db954;
 }
 .songs .song{
     margin-right: 10%;

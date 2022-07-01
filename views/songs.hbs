@@ -8,7 +8,7 @@
   {{#each songs as |song|}}
     <nav class="navbar bg-light">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h3 title">{{song.name}}</span>
+            <span class="navbar-brand mb-0 h3 title"><a href="{{song.uri}}">{{song.name}}</a></span>
             <span class="navbar-brand mb-0 h3 song"><audio controls>
         <source src="{{song.preview_url}}" type="audio/mpeg" />
       </audio></span>
